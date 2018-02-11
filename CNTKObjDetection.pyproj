@@ -5,7 +5,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{b9bddb2a-a7ff-43b6-993d-d6292ee57780}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>Extensibility\ProposalLayer\native_proposal_layer.py</StartupFile>
+    <StartupFile>Nokia3310_detection.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
@@ -20,9 +20,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Nokia3310_detection.py" />
-    <Compile Include="Extensibility\BinaryConvolution\binary_convnet.py" />
-    <Compile Include="Extensibility\BinaryConvolution\custom_convolution_ops.py" />
-    <Compile Include="Extensibility\ProposalLayer\native_proposal_layer.py" />
     <Compile Include="FasterRCNN\FasterRCNN_config.py" />
     <Compile Include="FasterRCNN\FasterRCNN_eval.py" />
     <Compile Include="FasterRCNN\FasterRCNN_train.py" />
@@ -134,9 +131,6 @@
     <Folder Include="DataSets\NO3310\negative\" />
     <Folder Include="DataSets\NO3310\positive\" />
     <Folder Include="DataSets\NO3310\testImages\" />
-    <Folder Include="Extensibility\" />
-    <Folder Include="Extensibility\BinaryConvolution" />
-    <Folder Include="Extensibility\ProposalLayer" />
     <Folder Include="FasterRCNN" />
     <Folder Include="PretrainedModels" />
     <Folder Include="utils" />

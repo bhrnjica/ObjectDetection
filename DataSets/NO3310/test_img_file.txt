@@ -1,4 +1,4 @@
-0	D:/repos/no3310_cntk_img_det/DataSets/NO3310/testImages/img01.jpg	0
-1	D:/repos/no3310_cntk_img_det/DataSets/NO3310/testImages/img05.jpg	0
-2	D:/repos/no3310_cntk_img_det/DataSets/NO3310/testImages/img10.jpg	0
-3	D:/repos/no3310_cntk_img_det/DataSets/NO3310/testImages/img19.jpg	0
+0	testImages/img01.jpg	0
+1	testImages/img05.jpg	0
+2	testImages/img10.jpg	0
+3	testImages/img19.jpg	0
