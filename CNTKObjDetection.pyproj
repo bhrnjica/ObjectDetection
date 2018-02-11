@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{b9bddb2a-a7ff-43b6-993d-d6292ee57780}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>Extensibility\ProposalLayer\native_proposal_layer.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId>Global|VisualStudio|cntk2.2-py35</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Nokia3310_detection.py" />
+    <Compile Include="Extensibility\BinaryConvolution\binary_convnet.py" />
+    <Compile Include="Extensibility\BinaryConvolution\custom_convolution_ops.py" />
+    <Compile Include="Extensibility\ProposalLayer\native_proposal_layer.py" />
+    <Compile Include="FasterRCNN\FasterRCNN_config.py" />
+    <Compile Include="FasterRCNN\FasterRCNN_eval.py" />
+    <Compile Include="FasterRCNN\FasterRCNN_train.py" />
+    <Compile Include="FasterRCNN\run_faster_rcnn.py" />
+    <Compile Include="PretrainedModels\download_model.py" />
+    <Compile Include="utils\annotations\annotations_helper.py" />
+    <Compile Include="utils\caffe_layers\anchor_target_layer.py" />
+    <Compile Include="utils\caffe_layers\bbox_transform.py" />
+    <Compile Include="utils\caffe_layers\default_config.py" />
+    <Compile Include="utils\caffe_layers\proposal_layer.py" />
+    <Compile Include="utils\caffe_layers\proposal_target_layer.py" />
+    <Compile Include="utils\configs\AlexNet_config.py" />
+    <Compile Include="utils\configs\NO3310_config.py" />
+    <Compile Include="utils\config_helpers.py" />
+    <Compile Include="utils\map_helpers.py" />
+    <Compile Include="utils\nms_wrapper.py" />
+    <Compile Include="utils\od_mb_source.py" />
+    <Compile Include="utils\od_reader.py" />
+    <Compile Include="utils\od_utils.py" />
+    <Compile Include="utils\plot_helpers.py" />
+    <Compile Include="utils\proposal_helpers.py" />
+    <Compile Include="utils\rpn\anchor_target_layer.py" />
+    <Compile Include="utils\rpn\bbox_transform.py" />
+    <Compile Include="utils\rpn\cntk_smoothL1_loss.py" />
+    <Compile Include="utils\rpn\generate_anchors.py" />
+    <Compile Include="utils\rpn\proposal_layer.py" />
+    <Compile Include="utils\rpn\proposal_target_layer.py" />
+    <Compile Include="utils\rpn\rpn_helpers.py" />
+    <Compile Include="__init__.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DataSets\NO3310\class_map.txt" />
+    <Content Include="DataSets\NO3310\negative\img21.jpg" />
+    <Content Include="DataSets\NO3310\negative\img22.jpg" />
+    <Content Include="DataSets\NO3310\positive\img02.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img02.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img02.jpg" />
+    <Content Include="DataSets\NO3310\positive\img03.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img03.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img03.jpg" />
+    <Content Include="DataSets\NO3310\positive\img04.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img04.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img04.jpg" />
+    <Content Include="DataSets\NO3310\positive\img06.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img06.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img06.jpg" />
+    <Content Include="DataSets\NO3310\positive\img07.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img07.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img07.jpg" />
+    <Content Include="DataSets\NO3310\positive\img08.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img08.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img08.jpg" />
+    <Content Include="DataSets\NO3310\positive\img09.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img09.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img09.jpg" />
+    <Content Include="DataSets\NO3310\positive\img11.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img11.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img11.jpg" />
+    <Content Include="DataSets\NO3310\positive\img12.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img12.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img12.jpg" />
+    <Content Include="DataSets\NO3310\positive\img13.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img13.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img13.jpg" />
+    <Content Include="DataSets\NO3310\positive\img14.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img14.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img14.jpg" />
+    <Content Include="DataSets\NO3310\positive\img15.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img15.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img15.jpg" />
+    <Content Include="DataSets\NO3310\positive\img16.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img16.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img16.jpg" />
+    <Content Include="DataSets\NO3310\positive\img17.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img17.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img17.jpg" />
+    <Content Include="DataSets\NO3310\positive\img18.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img18.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img18.jpg" />
+    <Content Include="DataSets\NO3310\positive\img20.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img20.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img20.jpg" />
+    <Content Include="DataSets\NO3310\positive\img23.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img23.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img23.jpg" />
+    <Content Include="DataSets\NO3310\positive\img24.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\positive\img24.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\positive\img24.jpg" />
+    <Content Include="DataSets\NO3310\testImages\img01.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img01.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img01.jpg" />
+    <Content Include="DataSets\NO3310\testImages\img05.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img05.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img05.jpg" />
+    <Content Include="DataSets\NO3310\testImages\img10.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img10.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img10.jpg" />
+    <Content Include="DataSets\NO3310\testImages\img19.bboxes.labels.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img19.bboxes.tsv" />
+    <Content Include="DataSets\NO3310\testImages\img19.jpg" />
+    <Content Include="DataSets\NO3310\test_img_file.txt" />
+    <Content Include="DataSets\NO3310\test_roi_file.txt" />
+    <Content Include="DataSets\NO3310\train_img_file.txt" />
+    <Content Include="DataSets\NO3310\train_roi_file.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DataSets\" />
+    <Folder Include="DataSets\NO3310\" />
+    <Folder Include="DataSets\NO3310\negative\" />
+    <Folder Include="DataSets\NO3310\positive\" />
+    <Folder Include="DataSets\NO3310\testImages\" />
+    <Folder Include="Extensibility\" />
+    <Folder Include="Extensibility\BinaryConvolution" />
+    <Folder Include="Extensibility\ProposalLayer" />
+    <Folder Include="FasterRCNN" />
+    <Folder Include="PretrainedModels" />
+    <Folder Include="utils" />
+    <Folder Include="utils\annotations" />
+    <Folder Include="utils\caffe_layers" />
+    <Folder Include="utils\configs" />
+    <Folder Include="utils\rpn" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|VisualStudio|cntk2.2-py35" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>

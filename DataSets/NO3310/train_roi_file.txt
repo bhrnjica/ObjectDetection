@@ -1,0 +1,18 @@
+0 |roiAndLabel 227	0	577	288 1
+1 |roiAndLabel 11	5	112	258 1
+2 |roiAndLabel 573	212	623	318 1
+3 |roiAndLabel 193	24	294	172 1
+4 |roiAndLabel 84	3	172	200 1
+5 |roiAndLabel 22	0	362	196 1
+6 |roiAndLabel 28	3	738	367 1
+7 |roiAndLabel 373	204	564	650 1
+8 |roiAndLabel 23	55	156	292 1
+9 |roiAndLabel 220	47	346	353 1	354	38	490	345 1	492	41	640	359 1	55	23	203	345 1
+10 |roiAndLabel 50	4	173	214 1
+11 |roiAndLabel 247	97	1001	556 1
+12 |roiAndLabel 168	0	721	537 1
+13 |roiAndLabel 463	6	584	306 1
+14 |roiAndLabel 21	25	194	400 1
+15 |roiAndLabel 568	544	749	982 1	130	100	394	557 1	34	620	446	930 1	535	102	931	399 1
+16 |roiAndLabel 50	20	359	765 1
+17 |roiAndLabel 41	21	201	427 1	270	15	439	441 1	493	19	660	429 1
