@@ -45,4 +45,4 @@ In order to change DataSet you have to provide the images and data. More informa
 
 #### Changing the base model
 
-The does not support changing the base model. 
+Changing base model is not supported.. 
