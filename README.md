@@ -1,4 +1,4 @@
-Detecting Nokia3310 mobile phone using CNTK and Python
+Object detection example CNTK and Python
 
 ## Overview
 
