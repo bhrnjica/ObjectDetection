@@ -28,8 +28,8 @@ __C.CNTK.FORCE_DETERMINISTIC = False
 # set to 'True' to run only a single epoch
 __C.CNTK.FAST_MODE = False
 # Debug parameters
-__C.CNTK.DEBUG_OUTPUT = True
-__C.CNTK.GRAPH_TYPE = "pdf" # "png" or "pdf"
+__C.CNTK.DEBUG_OUTPUT = False
+__C.CNTK.GRAPH_TYPE = "png" # "png" or "pdf"
 # Set to True if you want to store an eval model with native UDFs (e.g. for inference using C++ or C#)
 __C.STORE_EVAL_MODEL_WITH_NATIVE_UDF = True
 

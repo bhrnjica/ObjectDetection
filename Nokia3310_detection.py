@@ -4,6 +4,7 @@
 # for full license information.
 # ==============================================================================
 import os, sys
+
 import numpy as np
 import utils.od_utils as od
 from utils.config_helpers import merge_configs
@@ -30,12 +31,9 @@ if __name__ == '__main__':
 
     # train and test
     eval_model = od.train_object_detector(cfg)
-    eval_results = od.evaluate_test_set(eval_model, cfg)
+    # eval_results = od.evaluate_test_set(eval_model, cfg)
 
-    # write AP results to output
-    for class_name in eval_results: print('AP for {:>15} = {:.4f}'.format(class_name, eval_results[class_name]))
-    print('Mean AP = {:.4f}'.format(np.nanmean(list(eval_results.values()))))
-
+   
     # detect objects in single image
     img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"DataSets/NO3310/testImages/img30.jpg")
     regressed_rois, cls_probs = od.evaluate_single_image(eval_model, img_path, cfg)
