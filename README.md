@@ -1,4 +1,4 @@
-Object detection example CNTK and Python
+Object detection example using CNTK and Python
 
 ## Overview
 
