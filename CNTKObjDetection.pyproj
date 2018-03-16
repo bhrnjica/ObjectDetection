@@ -23,7 +23,6 @@
     <Compile Include="FasterRCNN\FasterRCNN_config.py" />
     <Compile Include="FasterRCNN\FasterRCNN_eval.py" />
     <Compile Include="FasterRCNN\FasterRCNN_train.py" />
-    <Compile Include="FasterRCNN\run_faster_rcnn.py" />
     <Compile Include="PretrainedModels\download_model.py" />
     <Compile Include="utils\annotations\annotations_helper.py" />
     <Compile Include="utils\caffe_layers\anchor_target_layer.py" />

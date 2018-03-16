@@ -3,11 +3,14 @@
 # Licensed under the MIT license. See LICENSE.md file in the project root
 # for full license information.
 # ==============================================================================
-import os, sys
-
+import os
 import numpy as np
+import cntk
+from FasterRCNN.FasterRCNN_train import prepare, train_faster_rcnn, store_eval_model_with_native_udf
+from FasterRCNN.FasterRCNN_eval import compute_test_set_aps, FasterRCNN_Evaluator
 import utils.od_utils as od
 from utils.config_helpers import merge_configs
+from utils.plot_helpers import plot_test_set_results
 
 def get_configuration():
     # load configs for detector, base network and data set
@@ -30,13 +33,22 @@ if __name__ == '__main__':
     cfg = get_configuration()
 
     # train and test
-    eval_model = od.train_object_detector(cfg)
-    # eval_results = od.evaluate_test_set(eval_model, cfg)
+    trained_model = od.train_object_detector(cfg)
+    eval_results = od.evaluate_test_set(trained_model, cfg)
 
-   
+    # Plot results on test set images
+    if cfg.VISUALIZE_RESULTS:
+        num_eval = min(cfg["DATA"].NUM_TEST_IMAGES, 100)
+        results_folder = os.path.join(cfg.OUTPUT_PATH, cfg["DATA"].DATASET)
+        evaluator = FasterRCNN_Evaluator(trained_model, cfg)
+        plot_test_set_results(evaluator, num_eval, results_folder, cfg)
+
+    if cfg.STORE_EVAL_MODEL_WITH_NATIVE_UDF:
+        store_eval_model_with_native_udf(trained_model, cfg)
+
     # detect objects in single image
     img_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), r"DataSets/NO3310/testImages/img30.jpg")
-    regressed_rois, cls_probs = od.evaluate_single_image(eval_model, img_path, cfg)
+    regressed_rois, cls_probs = od.evaluate_single_image(trained_model, img_path, cfg)
     bboxes, labels, scores = od.filter_results(regressed_rois, cls_probs, cfg)
 
     # write detection results to output
@@ -47,4 +59,4 @@ if __name__ == '__main__':
     # visualize detections on image
     od.visualize_results(img_path, bboxes, labels, scores, cfg)
     # measure inference time
-   # od.measure_inference_time(eval_model, img_path, cfg, num_repetitions=100)
+   # od.measure_inference_time(trained_model, img_path, cfg, num_repetitions=100)
