@@ -24,7 +24,7 @@ Beside the basics requiremens you need to install the following additional packa
 pip install opencv-python easydict pyyaml future
 ```
 
-The also code uses prebuild Cython modules for parts of the region proposal network (see `utils/cython_modules`). 
+Also, code uses prebuild Cython modules for parts of the region proposal network (see `utils/cython_modules`). 
 
 If you want to use the debug output you need to run `pip install pydot_ng` ([website](https://pypi.python.org/pypi/pydot-ng)) and install [graphviz](http://graphviz.org/) to be able to plot the CNTK graphs (the GraphViz executable has to be in the system’s PATH).
 
