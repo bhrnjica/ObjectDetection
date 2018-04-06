@@ -16,7 +16,9 @@ By running `Nokia3310_detection.py` the code will do the following:
 
 ### Setup
 
-To run Nokia3310 object detection example you need a CNTK 2.3, Python 3.5 environment. Beside the basics requiremens you need to install the following additional packages:
+To run Nokia3310 object detection example you need a CNTK 2.5, Python 3.5 environment. In order to install CNTK2.5 you have to install Intel Math Kernel Library (MKLML) from this location https://github.com/intel/mkl-dnn/releases. Anyhow in order for proper installation of CNKT consult to the official site. 
+
+Beside the basics requiremens you need to install the following additional packages:
 
 ```
 pip install opencv-python easydict pyyaml future
