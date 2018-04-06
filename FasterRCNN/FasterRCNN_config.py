@@ -31,7 +31,7 @@ __C.CNTK.FAST_MODE = False
 __C.CNTK.DEBUG_OUTPUT = False
 __C.CNTK.GRAPH_TYPE = "png" # "png" or "pdf"
 # Set to True if you want to store an eval model with native UDFs (e.g. for inference using C++ or C#)
-__C.STORE_EVAL_MODEL_WITH_NATIVE_UDF = False
+__C.STORE_EVAL_MODEL_WITH_NATIVE_UDF = True
 
 # Learning parameters
 __C.CNTK.L2_REG_WEIGHT = 0.0005
