@@ -1,5 +1,5 @@
 Object detection example using CNTK and Python
-(https://github.com/bhrnjica/ObjectDetection/blob/master/nokiasamplerecogn.png)
+[Nokia3310] (https://github.com/bhrnjica/ObjectDetection/blob/master/nokiasamplerecogn.png)
 
 ## Overview
 
