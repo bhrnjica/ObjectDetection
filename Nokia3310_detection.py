@@ -32,8 +32,9 @@ if __name__ == '__main__':
     # Get Configuration
     cfg = get_configuration()
 
-    # train and test
+    # train 
     trained_model = od.train_object_detector(cfg)
+    # test model with some images
     eval_results = od.evaluate_test_set(trained_model, cfg)
 
     # Plot results on test set images

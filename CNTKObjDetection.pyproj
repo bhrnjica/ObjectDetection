@@ -123,6 +123,7 @@
     <Content Include="DataSets\NO3310\test_roi_file.txt" />
     <Content Include="DataSets\NO3310\train_img_file.txt" />
     <Content Include="DataSets\NO3310\train_roi_file.txt" />
+    <Content Include="nokiasamplerecogn.png" />
     <Content Include="README.md" />
   </ItemGroup>
   <ItemGroup>
