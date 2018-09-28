@@ -22,10 +22,10 @@ To run Nokia3310 object detection example you need a CNTK 2.5, Python 3.5 enviro
 Beside the basics requiremens you need to install the following additional packages:
 
 ```
-pip install opencv-python easydict pyyaml future
+pip install opencv-python easydict pyyaml future pillow
 ```
 
-Also, code uses prebuild Cython modules for parts of the region proposal network (see `utils/cython_modules`). 
+Also, code uses prebuild Cython modules for parts of the region proposal network (see `utils/cython_modules`). This will only work on Windows with Python 3.5 at the moment. You'll need to compile the cython module binaries for your specific platform (OS & Python version) to have this work on another environment. 
 
 If you want to use the debug output you need to run `pip install pydot_ng` ([website](https://pypi.python.org/pypi/pydot-ng)) and install [graphviz](http://graphviz.org/) to be able to plot the CNTK graphs (the GraphViz executable has to be in the system’s PATH).
 
